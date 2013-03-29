@@ -27,7 +27,7 @@ line = stat.contents[0]
 print line
 users = line.split()[0]
 
-record = strftime("%Y-%m-%d %H:%M:%S") + '|' + users + '|'
+record = strftime("%Y-%m-%d %H:%M:%S") + ',' + users + ','
 print record
 with open("/home/leo/dev/scripts/users.csv", "a") as csvfile:
     csvfile.write(record)
