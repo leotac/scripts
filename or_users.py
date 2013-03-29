@@ -32,7 +32,7 @@ print record
 with open("/home/leo/dev/scripts/users.csv", "a") as csvfile:
     csvfile.write(record)
 try:
-    dd = DataFrame.from_csv("/home/leo/dev/scripts/users.csv",parse_dates=True, sep='|',header=0)
+    dd = DataFrame.from_csv("/home/leo/dev/scripts/users.csv",parse_dates=True, sep=',',header=0)
 except:
     log_n_quit("could not load dataframe")
 
